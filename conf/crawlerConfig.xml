@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<!--
+	  Interval (in milliseconds) to invoke a crawl thread.
+	  There is an HTTP hit every <interval> millisecond.
+	-->
+	<interval>200</interval>
+
+	<!--
+	  Interval (in milliseconds) to invoke a monitor thread.
+	  Monitor adds new entry in the monitor.log every <monitorInterval>
+          milliseconds
+	-->
+	<monitorInterval>1000</monitorInterval>
+
+	<!-- HTTP connection timeout in milliseconds -->
+	<connectionTimeout>1000</connectionTimeout>
+
+
+	<!-- Headers to be used by the http client crawler -->
+	<headers>
+		<header name="User-Agent">Mozilla</header>
+		<header name="Accept-Language">en-us</header>
+	</headers>
+
+
+	<!-- URLs to start crawling from -->
+	<crawl-urls>
+		<url>http://example-php1-wp/</url>
+	</crawl-urls>
+
+
+	<!--
+	  URL patterns (regexps!!!) to allow or deny set of URLs
+	  permission=true  - these patterns are allowed (anything else is denied)
+	  permission=false - these patterns are denied (anything else is allowed)
+	-->
+	<url-patterns permission="true">
+		<pattern>.*example-php1-wp.*</pattern>
+	</url-patterns>
+
+</settings>

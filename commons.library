@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <!--JBuilder Library Definition File-->
+  <fullname>commons</fullname>
+  <class>
+    <path>[lib/log4j.jar]</path>
+    <path>[lib/commons-logging.jar]</path>
+    <path>[lib/commons-httpclient.jar]</path>
+    <path>[lib/commons-digester.jar]</path>
+    <path>[lib/commons-collections.jar]</path>
+    <path>[lib/commons-beanutils.jar]</path>
+    <path>[lib/junit.jar]</path>
+    <path>etc</path>
+  </class>
+  <lastmodsaved>1100114431277</lastmodsaved>
+</library>
